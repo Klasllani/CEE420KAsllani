@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 - CEE420KAsllani Construction Journal</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTMX -->
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CEE420KAsllani - Construction Observation Journal</h1>
+        <p>Spring 2025 | CEE 420 - Construction Productivity</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="week1.html">Week 1</a>
+        <a href="week2.html" class="active">Week 2</a>
+        <!-- Add more weeks as you progress -->
+    </div>
+
+    <div class="container">
+        <div class="entry" id="week2">
+            <h2>Week 2 - February 20, 2025</h2>
+            <p>By the second week of construction at the northeast corner of Green and 1st Street, the site had evolved into a bustling, well-organized hub of activity. What was once a patch of undeveloped land now buzzed with the hum of machinery and the coordinated efforts of a skilled crew. Dominating the scene were two key pieces of equipment: a Caterpillar 299D3 compact track loader and a Caterpillar 320E excavator. These machines, each with its own specialized purpose, were the backbone of the operation, their synchronized performance highlighting the project's efficiency and precision.</p>
+            
+            <p>The Caterpillar 299D3, a compact track loader renowned for its versatility, was the site's primary workhorse for material handling. Its durable rubber tracks provided exceptional traction, allowing it to glide effortlessly over the uneven, muddy terrain—a common challenge in the chilly February weather. Fitted with a sturdy bucket attachment, the 299D3 tirelessly shuttled dirt, gravel, and construction debris to designated stockpile areas. Its compact design proved invaluable in navigating confined spaces, such as along the perimeter fence or near the emerging foundation walls. The operator, a seasoned veteran with years of experience, handled the machine with surgical precision, delivering materials exactly where they were needed without delay. The loader's adaptability shone through its ability to switch attachments—whether swapping the bucket for forks to move pallets or an auger for drilling tasks—making it a multi-faceted tool as the project's demands evolved.</p>
+            
+            <p>In contrast, the Caterpillar 320E excavator stood as the site's heavy-duty titan. With its extended arm and robust bucket, this powerhouse was tasked with excavating deeper trenches for utility lines and refining the foundation's layout. The 320E's advanced hydraulic system ensured smooth, controlled movements, even when lifting substantial loads of soil or breaking through stubborn rock layers. Guided by the surveyors' precise markings, the operator dug with meticulous accuracy, ensuring every trench met the project's stringent specifications. The excavator's efficiency was amplified by its seamless coordination with the 299D3, as excavated material was swiftly scooped up and transported away, maintaining a fluid workflow across the site.</p>
+            
+            <p>To keep productivity at its peak, the foreman relied on Crew Balance Charts, a methodical tool for optimizing labor and equipment use. He meticulously tracked each worker's role in the excavation and material-moving process, timing every step. A typical cycle might see the excavator operator digging a trench, the loader operator hauling away soil, and laborers prepping the next section. By analyzing these charts, the foreman could pinpoint inefficiencies—like the loader operator waiting idle between loads—and reassign tasks, such as organizing materials or clearing debris, to eliminate downtime and keep the operation running smoothly.</p>
+            
+            <div class="photo-gallery">
+                <img src="images/photo1_week2.jpg" alt="Week 2 Photo 1" hx-swap="outerHTML" hx-target="#photo-modal" hx-trigger="click" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="images/photo2_week2.jpg" alt="Week 2 Photo 2" hx-swap="outerHTML" hx-target="#photo-modal" hx-trigger="click" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="images/photo3_week2.jpg" alt="Week 2 Photo 3" hx-swap="outerHTML" hx-target="#photo-modal" hx-trigger="click" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <img src="images/photo4_week2.jpg" alt="Week 2 Photo 4" hx-swap="outerHTML" hx-target="#photo-modal" hx-trigger="click" data-bs-toggle="modal" data-bs-target="#imageModal">
+            </div>
+            
+            <div class="back-next-nav">
+                <a href="week1.html" class="btn">← Previous Week</a>
+                <a href="index.html" class="btn">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for enlarged images -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Site Photo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="photo-modal">
+                    <!-- Image will be loaded here by htmx -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 CEE420KAsllani | University of Illinois at Urbana-Champaign</p>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

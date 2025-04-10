@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 3 - CEE420KAsllani Construction Journal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CEE420KAsllani - Construction Observation Journal</h1>
+        <p>Spring 2025 | CEE 420 - Construction Productivity</p>
+    </div>
+
+    <div class="nav">
+        <a href="index.html">Home</a>
+        <a href="week1.html">Week 1</a>
+        <a href="week2.html">Week 2</a>
+        <a href="week3.html" class="active">Week 3</a>
+        <a href="week4.html">Week 4</a>
+        <a href="week5.html">Week 5</a>
+        <a href="week6.html">Week 6</a>
+        <a href="week7.html">Week 7</a>
+        <a href="week8.html">Week 8</a>
+        <a href="week9.html">Week 9</a>
+        <a href="week10.html">Week 10</a>
+    </div>
+
+    <div class="container">
+        <div class="entry" id="week3">
+            <h2>Week 3 - February 27, 2025</h2>
+            <p>Week 3 at the studio apartment site on Green Street marked a significant shift as concrete pouring for the foundation slabs began. The crisp February air carried the scent of wet cement as trucks lined up along 1st Street, their chutes extended over the prepared trenches. Workers in neon vests swarmed the site, guiding the flow of concrete with practiced precision while vibrators hummed to eliminate air pockets. The foundation, now taking shape, promised stability for the multi-story structure to come. Amid this progress, the project manager faced a critical financial decision: choosing between two concrete pump options to optimize productivity and cost over the remaining pours.</p>
+            
+            <p>The first option was a truck-mounted pump costing $80,000, with an annual operating cost of $15,000 and a 5-year life expectancy, including a $10,000 salvage value. The second was a trailer-mounted pump at $100,000, with a lower annual cost of $12,000 and the same 5-year lifespan, salvaging at $15,000. With a budget constraint of $120,000 for equipment this quarter and a Minimum Attractive Rate of Return (MARR) set at 15% by University Group, the decision required careful analysis. These were mutually exclusive alternatives—only one pump could be purchased due to operational needs and budget limits. The ‘do nothing’ option was infeasible, as manual pouring would delay the Fall 2025 opening, reducing productivity and increasing labor costs.</p>
+            
+            <p>Using Net Present Value (NPV) from CEE 420’s financial decision-making toolkit, the team evaluated both pumps over a 5-year study period. For the truck-mounted pump, annual costs were discounted using the Uniform-Series Present-Worth formula: P = A[(1 + i)^n - 1] / [i(1 + i)^n], where A = $15,000, i = 0.15, and n = 5, yielding $50,318. Adding the initial $80,000, the NPV was $130,318. For the trailer-mounted pump, the same formula with A = $12,000 gave $40,254, plus $100,000 initial cost, totaling $140,254. However, factoring in salvage values (Single-Payment Present-Worth: P = F / (1 + i)^n), the truck pump’s $10,000 became $4,971, and the trailer’s $15,000 became $7,457, adjusting NPVs to $125,347 and $132,797, respectively. The truck-mounted pump, with a lower NPV, was more cost-effective.</p>
+            
+            <p style="padding-bottom: 20px;">The foreman noted that the truck pump’s mobility would also boost productivity by reducing setup time between pours, a qualitative benefit reinforcing the NPV choice. By Thursday’s end, the truck pump was in use, streamlining operations as concrete flowed seamlessly across the site. This decision, blending financial rigor and practical insight, kept the project on track for its aggressive timeline.</p>
+            
+            <div class="photo-gallery">
+                <img src="images/photo1_week3.jpg" alt="Week 3 Photo 1">
+                <img src="images/photo2_week3.jpg" alt="Week 3 Photo 2">
+                <img src="images/photo3_week3.jpg" alt="Week 3 Photo 3">
+                <img src="images/photo4_week3.jpg" alt="Week 3 Photo 4">
+            </div>
+            
+            <div class="back-next-nav">
+                <a href="week2.html" class="btn">← Previous Week</a>
+                <a href="week4.html" class="btn">Next Week →</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imageModalLabel">Site Photo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="photo-modal">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 CEE420KAsllani | University of Illinois at Urbana-Champaign</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

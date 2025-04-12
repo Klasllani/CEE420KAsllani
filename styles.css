@@ -239,3 +239,8 @@ body {
         font-size: 1.8em;
     }
 }
+
+/* Style for HOME.png image */
+.home-image {
+    border-radius: 15px; /* Rounded corners */
+}
